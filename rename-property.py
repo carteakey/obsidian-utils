@@ -1,6 +1,9 @@
 import os
 import re
 
+# Taken from
+# https://forum.obsidian.md/t/properties-wrangler-add-a-way-to-insert-rename-and-remove-properties-and-values-in-all-files/63806/30
+
 def rename_property(file_path, old_property, new_property):
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()

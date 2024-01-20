@@ -1,0 +1,12 @@
+/* Outer container for scrolling */
+div[data-type="pdf"] .pdf-viewer-scroll-container {
+    overflow: auto; /* Handles scrolling */
+    width:  auto;/* Adjust as needed */
+    height: 100%; /* Adjust based on content */
+}
+
+/* Inner container for scaling */
+div[data-type="pdf"] .pdf-viewer-scroll-container .pdf-viewer-container {
+    transform: scale(0.5); /* Adjust scale as needed */
+    transform-origin: top center; /* Adjust origin as needed */
+}
